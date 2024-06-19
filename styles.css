@@ -1,0 +1,49 @@
+body {
+    background-color: rgba(7, 30, 61, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 100vh;
+}
+
+button {
+    color: rgba(3, 11, 8, 1);
+    background-color: rgba(46, 230, 192, 1);
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 7px solid rgba(38, 139, 162, 1);
+    padding: 10px 50px;
+    width: 200px;
+    height: auto;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.top-text,
+.score {
+    color: rgba(43, 215, 182, 1);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+
+img {
+    height: 70px;
+    width: auto;
+}
+
+.images {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-self: stretch;
+    padding: 0 40%;
+}
+
+.Result{
+    font-size: 30px;
+    color:rgba(24, 136, 132, 0.856);
+}
