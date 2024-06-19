@@ -22,14 +22,16 @@ const score = document.querySelector(".score");
 const result = document.querySelector(".Result");
 let playerScore = 0;
 let computerScore = 0;
+let roundNo = 0;
 
 function playRound(humanChoice, computerChoice) {
+    roundNo++;
     let humanPng = `./images/${humanChoice}.png`;
     let computerPng = `./images/${computerChoice}.png`;
-    let results = `You choose ${humanChoice}. Computer choose ${computerChoice}`;
+    let results = `You choose ${humanChoice}. Computer choose ${computerChoice}, Round-no:${roundNo}`;
     playerImage.setAttribute("src", humanPng);
     computerImage.setAttribute("src", computerPng);
-
+    
     humanChoice = humanChoice.toLowerCase();
     computerChoice = computerChoice.toLowerCase();
     if (humanChoice === "rock") {
